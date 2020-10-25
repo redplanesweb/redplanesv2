@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+        font-size: 14px;
+        --main-color: #2196f3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #3d3d3d;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.no-arrows input::-webkit-outer-spin-button,
+.no-arrows input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.no-arrows input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.hover-grow {
+    transition: all .25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.hover-grow:hover {
+    transform: scale(1.025);
+}
+/* =============================================================================
+| SEARCH PAGE
+============================================================================= */
+.insurance-search-entry {
+    margin-bottom: 2em;
+}
+
+.entry-content {
+    padding: 5px 9px 8px 9px;
+    width: 100%;
+}
+.content-bottom {
+    display: flex;
+}
+.content-bottom {
+    width: 100%;
+}
+.entry-upper-content {
+    margin-right: 9px;
+    flex: 1;
+}
+.content-left {
+    flex: 1;
+    padding: 0 1rem;
+    margin-bottom: .25rem;
+}
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entry-title {
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+.entry-price {
+    font-size: 31px;
+    line-height: 32px;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.entry-description {
+    margin: 0;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+}
+.entry-span {
+    display: block;
+    font-size: 0.7857rem;
+    font-weight: 300;
+}
+
+.entry-quick-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.entry-quick-info div {
+    text-align: center;
+}
+.entry-quick-info p {
+    margin: 0;
+    color: #212121;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.entry-quick-info span {
+    color: #5b616b;
+    font-size: .9rem;
+}
+.filter-container {
+    margin-bottom: 1em;
+}
+.filter-title {
+    background: var(--main-color);
+    border-radius: 4px;
+    padding: 1em;
+    color: white;
+    font-weight: 700;
+}
+.filter-content {
+    padding: 1em;
+}
+
+.filter-price {
+    display: flex;
+    flex-direction: column;
+}
+.filter-price div {
+    margin-bottom: .5em;
+}
+.filter-checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* =============================================================================
+| DASHBOARD FRAMEWORK
+============================================================================= */
+.dashboard-main-container {
+    display: grid;
+    grid-template-columns: 275px 1fr;
+    flex: 1;
+}
+
+.dashboard-right-content {
+    padding: 2em;
+    height: 100%;
+    background: #3d3d3d;
+}
+
+.mobile-show {display: none;}
+
+/* =============================================================================
+| DETAIL MODAL
+============================================================================= */
+.detail-modal-container {
+    display: flex;
+}
+.detail-modal-left {
+    flex: 1;
+}
+.detail-modal-right {
+    max-width: 30%;
+    padding: 1.5em;
+}
+.detail-modal-right h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.detail-modal-right .MuiTextField-root{
+    width: 100%;
+    margin: .25em 0;
+}
+.detail-modal-right li {
+    display: flex;
+}
+.detail-modal-right li img {
+    width: 1rem;
+    margin-right: .5rem;
+}
+.detail-modal .button-container {
+    width: 30%;
+}
+.mas-vendido {
+    background: red;
+    color: white;
+    font-size: .875rem;
+    padding: .1rem .5rem;
+    margin: 0 1em;
+}
+/* =============================================================================
+| RESPONSIVE QUERY
+============================================================================= */
+.price-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .entry-content {
+        flex-direction: column;
+    }
+    .insurance-entry-table {
+        display: none;
+    }
+    .entry-content .content-right {
+        display: flex;
+        flex-direction: row;
+    }
+    .price-content {
+        width: 50%;
+        padding-right: .5em;
+        text-align: left;
+    }
+    .price-content h3 {
+        font-size: 2rem;
+    }
+    .button-content {
+        width: 50%;
+    }
+
+    .mobile-hide {display: none}
+    .mobile-show {display: block}
+    .logo {
+
+        width: 50%;
+    }
+    .menu-container {justify-content: center;}
+
+    .insurance-entry-table-mobile {
+        width: 100%;
+        margin-bottom: 1.5em;
+    } 
+
+    .insurance-entry-table-mobile .MuiTableCell-sizeSmall {
+        padding: .25em 0;
+        font-size: .8rem;
+        text-align: center;
+    }
+    .insurance-entry-table-mobile .MuiTableCell-body {
+        padding-top: 1.5em;
+    }
+    .entry-upper-content {
+        margin: 0;
+    }
+    .entry-content .entry-title {
+        font-size: 1.5;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    .entry-content .entry-description {
+        font-size: 1rem;
+    }
+    .entry-content .entry-span {
+        font-size: .875rem;
+    }
+    .detail-modal-container {
+        flex-direction: column;
+    }
+    .detail-modal-right {
+        max-width: 100%;
+        margin: 1.5em 0;
+    }
+    .detail-modal {
+        overflow-y: scroll;
+    }
+    .detail-modal .button-container {
+        width: 100%;
+    }
+
+}
+
+
+/* =============================================================================
+| EXTRAS
+============================================================================= */
+.insurance-entry-table {
+    background: none;
+}
+
+.insurance-entry-table th, .insurance-entry-table td{
+    border-bottom: 1px solid #c7c7c7;
+    text-transform: uppercase;
+    padding: 11px 6px;
+
+}
+.insurance-add-general-detail-form-container .material-input {
+    width: 200px;
+    margin: .5em;
+}
+.pdf-dropzone .MuiDropzonePreviewList-imageContainer {
+    display: none;
+}
+.pdf-dropzone .MuiDropzoneArea-root {
+    min-height: 50px;
+    height: 50px;
+    border: 2px dashed rgba(0,0,0,.15);
+}
+.pdf-dropzone .MuiDropzoneArea-textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.pdf-dropzone p {
+    margin: 0;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+.pdf-dropzone svg {
+    height: 25px;
+    width: 25px;
+}
+
+.short {
+    min-width: 30px;
+    margin: 0 5px;
+    width: 50px;
+    -moz-appearance: textfield;
+}
+.entry-list-container {
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+
+
+.entry-list-accordion .summary {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.modal-confirm {
+    padding: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+
+.initial-modal {
+    background: white;
+    padding: 1.5em;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 4px;
+}
