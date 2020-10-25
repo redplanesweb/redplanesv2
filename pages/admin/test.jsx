@@ -1,5 +1,5 @@
 import { Button } from '@material-ui/core'
-import ButtonWrapper from '@components/MuiButtonWrapper'
+import ButtonWrapper from '@components/ui/MuiButtonWrapper'
 
 const Pages = () => {
 
